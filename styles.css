@@ -323,6 +323,38 @@ h3 {
   color: var(--muted);
 }
 
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.96rem;
+  backdrop-filter: blur(8px);
+}
+
+.site-footer a {
+  color: var(--teal-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  text-decoration: underline;
+}
+
+.site-footer img {
+  width: auto;
+  height: 20px;
+}
+
 @media (max-width: 920px) {
   .hero,
   .content-grid,
@@ -395,5 +427,10 @@ h3 {
   .timeline-item time {
     display: block;
     margin-bottom: 8px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    padding: 18px;
   }
 }
