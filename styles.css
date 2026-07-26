@@ -20,7 +20,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(90deg, rgba(23, 107, 107, 0.08), transparent 36%),
+    linear-gradient(90deg, rgba(246, 247, 245, 0.9), rgba(246, 247, 245, 0.76) 48%, rgba(246, 247, 245, 0.86)),
+    url("background.png") center top / cover fixed no-repeat,
     var(--bg);
   color: var(--ink);
   font-family:
@@ -52,10 +53,11 @@ img {
   align-items: center;
   min-height: min(720px, calc(100vh - 64px));
   padding: clamp(28px, 5vw, 64px);
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
 }
 
 .eyebrow {
@@ -167,9 +169,10 @@ h1,
 .overview article,
 .panel,
 .education-grid article {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
   border-radius: 8px;
+  backdrop-filter: blur(8px);
 }
 
 .overview article {
@@ -243,9 +246,10 @@ h2 {
 .education-section {
   margin-top: 20px;
   padding: clamp(28px, 5vw, 46px);
-  background: #172024;
+  background: rgba(23, 32, 36, 0.94);
   color: #f8fbfa;
   border-radius: 8px;
+  backdrop-filter: blur(8px);
 }
 
 .section-heading {
@@ -294,7 +298,7 @@ h3 {
 }
 
 .education-section {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   color: var(--ink);
   border: 1px solid var(--line);
 }
