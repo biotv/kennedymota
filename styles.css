@@ -325,10 +325,10 @@ h3 {
 
 .site-footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   margin-top: 20px;
   padding: 18px 22px;
   background: rgba(255, 255, 255, 0.9);
@@ -336,6 +336,7 @@ h3 {
   border-radius: 8px;
   color: var(--muted);
   font-size: 0.96rem;
+  text-align: center;
   backdrop-filter: blur(8px);
 }
 
@@ -430,7 +431,6 @@ h3 {
   }
 
   .site-footer {
-    align-items: flex-start;
     padding: 18px;
   }
 }
